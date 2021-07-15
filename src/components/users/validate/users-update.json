@@ -1,0 +1,32 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "name": {
+      "type": "string",
+      "minLength": 2,
+      "maxLength": 254
+    },
+    "surname": {
+      "type": "string",
+      "maxLength": 254
+    },
+    "email": {
+      "type": "string",
+      "format": "email"
+    },
+    "gender": {
+      "type": "integer",
+      "maximum": 1,
+      "minimum": 0
+    },
+    "role": {
+      "type": "string",
+      "enum": ["admin", "member"]
+    },
+    "password": {
+      "type": "string",
+      "minLength": 6
+    }
+  }
+}

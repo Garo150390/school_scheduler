@@ -1,0 +1,18 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "name": {
+      "type": "string",
+      "minLength": 2,
+      "maxLength": 254
+    },
+    "start_date": { "type": "string" },
+    "end_date": { "type": "string" },
+    "number_of_seats": {
+      "type": "integer",
+      "maximum": 36,
+      "minimum": 8
+    }
+  }
+}

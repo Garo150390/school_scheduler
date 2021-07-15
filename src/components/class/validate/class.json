@@ -1,0 +1,23 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "start_date": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "end_date": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "number_of_seats": {
+      "type": "integer",
+      "maximum": 36,
+      "minimum": 8
+    }
+  },
+  "required": ["name", "start_date", "end_date"]
+}
